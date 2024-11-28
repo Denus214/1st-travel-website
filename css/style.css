@@ -1,0 +1,219 @@
+/* lato-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* lato-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/lato-v24-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+body {
+  font-family: 'Lato';
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  
+}
+
+img {
+  width: 100%;
+  aspect-ratio: auto;
+}
+.wrapper {
+max-width: 1060px;
+  margin: 0 auto;
+}
+
+/* Header styles start */
+
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 56px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 82px;
+}
+
+.header__link {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active {
+  opacity: 0.75;
+}
+
+/* Header styles end */
+
+
+
+/* Intro styles start */
+.intro {
+  height: 100vh;
+  background: url(../img/Hero.png) no-repeat center;
+  background-size: cover;
+  padding-top: 263px;
+}
+
+.intro__title {
+    max-width: 619px;
+    font-size: 50px;
+    line-height: 60px;
+    color: #ffffff;
+    margin-bottom: 22px;
+}
+
+.intro__subtitle {
+  max-width: 546px;
+    font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  margin-bottom: 59px;
+  
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 61px;
+    
+}
+
+.form__input-text {
+    width: 297px;
+    background: transparent url(../img/svg/Oval.svg) no-repeat left top;
+    background-size: 20px;
+    border: 0;
+    border-bottom: 2px solid #BFC0C5;
+    
+    padding-left: 43px;
+    padding-bottom: 22px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form__input-text::placeholder {
+    font-size: 18px;
+    color: white;
+}
+
+.form__submit {
+    background-color: #1B7DFF;
+    border: 0;
+    color: white;
+    padding: 15px 39px 14px;
+    text-transform: uppercase;
+}
+
+.form__submit:hover, .form__submit:focus, .form__submit:active {
+  background-color: #1b67ca;
+}
+
+/* benefits styles start */
+
+.benefits {
+  margin-bottom: 131px;
+}
+
+.benefits__wrapper {
+  width: 1260px;
+  background-color: white;
+  margin: 0 auto;
+  box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.16);
+  position: relative;
+  top: -242px;
+}
+
+.benefits__title {
+  color: #102746;
+  font-size: 35px;
+  line-height: 42px;
+  padding: 100px;
+
+}
+
+.benefits__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 55px;
+  padding: 0 100px;
+  padding-bottom: 112px;
+}
+
+.benefits__card-pic {
+  max-width: 66px;
+  margin-bottom: 37px;
+
+}
+
+.benefits__card-thumb {
+  display: block;
+}
+
+.benefits__card-title {
+  margin-bottom: 26px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.benefits__card-description {
+  margin-bottom: 39px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.benefits__card-link {
+  font-size: 16px;
+  line-height: 24px;
+  padding-right: 58px;
+  text-decoration: none;
+  color: #006DFE;
+  background: url(/img/svg/arrow-right-ico.svg) no-repeat 95% center;
+  transition: .2s all;
+
+}
+
+.benefits__card-link:hover, .benefits__card-link:focus, .benefits__card-link:active {
+  background: url(/img/svg/arrow-right-ico.svg) no-repeat right center;
+
+}
+
+
+/* benefits styles end */
+
