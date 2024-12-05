@@ -73,6 +73,13 @@ max-width: 1060px;
   top: 0;
   left: 0;
   width: 100%;
+  transition: 0.2s linear;
+  padding-bottom: 20px;
+  z-index: 10;
+}
+
+.header-active {
+  background-color: #0E1D28;
 }
 
 
@@ -407,6 +414,7 @@ max-width: 1060px;
 
 .top__card-pic {
   position: relative;
+  margin-bottom: 45px;
 }
 
 .top__card-stats {
@@ -418,6 +426,8 @@ max-width: 1060px;
   justify-content: flex-end;
   align-items: center;
   width: 100%;
+  padding: 15px 25px;
+  box-sizing: border-box;
   
 }
 
@@ -426,24 +436,57 @@ max-width: 1060px;
   line-height: 24px;
   color: white;
   margin: 0 auto 0 0;
-  padding: 0 0 15px 25px;
 }
 
 .top__card-likes {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: white;
-  margin-right: 14px;
-  margin-bottom: 15px;
   padding-right: 20px;
+  margin-right: 14px;
   background: url(/img/svg/heart-pic.svg) no-repeat center right;
+
+  
 }
 
 .top__card-comments {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 24px;
   color: white;
-  margin-right: 25px;
-  margin-bottom: 15px;
+  background: url(/img/svg/comment-pic.svg) no-repeat center right;
+  padding-right: 23px;
+}
+
+.top__card-desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 31px;
+}
+
+.top__card-more {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19.2px;
+  background-color: #006DFE;
+  color: white;
+  padding: 12px 19px;
 }
 /* Top styles end */
+
+/* video start */
+
+/* .videos {
+  width: 100%;
+} */
+
+.videos__wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.video-1 {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+/* video end */
