@@ -445,7 +445,6 @@ max-width: 1060px;
   padding-right: 20px;
   margin-right: 14px;
   background: url(/img/svg/heart-pic.svg) no-repeat center right;
-
   
 }
 
@@ -490,3 +489,45 @@ max-width: 1060px;
 }
 
 /* video end */
+
+/* footer style start */
+
+.footer {
+  background-color: #0E1D28;
+  padding: 119px 0;
+}
+
+.footer__item {
+display: flex;
+
+}
+
+.footer__nav {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__logo {
+  flex-grow: 1;
+}
+
+.footer__logo-pic {
+  width: 50%;
+}
+
+.footer__menu-title {
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+
+.footer__menu-link {
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+
+
+/* footer style end */
